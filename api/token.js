@@ -1,3 +1,8 @@
+// api/token.js
+export const config = {
+  runtime: 'edge' // 或 'experimental-edge'
+};
+
 // 文件路径：api/token.js
 export default async (req, res) => {
     const { code } = JSON.parse(req.body);
